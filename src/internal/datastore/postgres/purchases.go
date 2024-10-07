@@ -59,7 +59,7 @@ func (c *Client) CreatePurchase(p model.Purchase) error {
 	// create tickets
 	// Not sure if this was outside of the scope of the exercise?
 	q = queryCreateTicket
-	for _ = range p.Quantity {
+	for range p.Quantity {
 		_, err = tx.Exec(q, p.TicketOptionID, p.ID)
 		if err != nil {
 			return fmt.Errorf("error creating ticket: %w", err)

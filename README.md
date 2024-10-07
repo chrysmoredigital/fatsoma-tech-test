@@ -1,5 +1,11 @@
 # Ticket Allocation Coding Test
 
+## Instructions ##
+
+Start services: `make start`
+
+Stop services: `make stop`
+
 ## Introduction
 
 Thanks for applying for a development role at Fatsoma. To give us a good
